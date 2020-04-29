@@ -4,7 +4,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(express.static("public"));
 
-const PORT = process.env.PORT || 7080
+const PORT = process.env.PORT || 8080
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
